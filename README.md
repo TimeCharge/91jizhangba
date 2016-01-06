@@ -1,13 +1,18 @@
 # 91jizhangba
 91记账吧
 ## 接口说明
-    注册接口：/register.json
-    入参：{"content":{"password":"123","username":"123"}}
+    注册接口：/register
+    入参：{"data":{"passWord":"111","userName":"23232"},"token":"","userId":""}
     出参：
-      正常返回：{"info":{"code":200,"msg":"操作成功！"},"content":""}
-      错误返回：{"info":{"code":500,"msg":"该用户名已存在！"},"content":""}
-    登录接口：/login.json
-    入参：{"content":{"password":"123","username":"123"}}
+      正常返回：{"code":200,"msg":"操作成功！","data":""}
+      错误返回：{"code":500,"msg":"该用户名已存在！","data":""}
+    登录接口：/login
+    入参：{"data":{"passWord":"111","userName":"23232"},"token":"","userId":""}
     出参：
-      正常返回：{"info":{"code":200,"msg":"登录成功！"},"content":{"userid":"1","uuid":"123"}}
-      错误返回：{"info":{"code":500,"msg":"用户名或密码错误！"},"content":""}
+      正常返回：{"code":200,"msg":"登录成功！","data":{"id":2,"userId":7,"token":"1d425f8a1a2f4958bbe6866d8da1289a"}}
+      错误返回：{"code":500,"msg":"用户名或密码错误！","data":""}
+    登出接口：/logout
+    入参：{"data":"","token":"1d425f8a1a2f4958bbe6866d8da1289a","userId":"7"}
+    出参：
+      正常返回：{"code":200,"msg":"登出成功！","data":""}
+      错误返回：{"code":500,"msg":"登出失败，请联系客服！","data":""}
