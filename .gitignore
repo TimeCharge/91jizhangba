@@ -2,6 +2,8 @@
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
+.settings/
+.project
 
 # Package Files #
 *.jar
