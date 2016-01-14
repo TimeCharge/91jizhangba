@@ -2,7 +2,7 @@
 91记账吧
 ## 接口说明
     注册接口：/register
-    入参：passWord=111&userName=23232&equipmentId=23123123
+    入参：passWord=111&userName=23232
     出参：
       正常返回：{"code":200,"msg":"操作成功！","data":""}
       错误返回：{"code":500,"msg":"该用户名已存在！","data":""}
@@ -26,3 +26,8 @@
     出参：
       正常返回：{"code":200,"msg":"操作成功！","data":""}
       错误返回：{"code":500,"msg":"该用户名已存在！","data":""}
+    帐号验证接口：/feedBack
+    入参：content=aaa&token=1d425f8a1a2f4958bbe6866d8da1289a&userId=7
+    出参：
+      正常返回：{"code":200,"msg":"操作成功！","data":""}
+      错误返回：{"code":500,"msg":"系统错误！","data":""}
